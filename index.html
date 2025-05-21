@@ -1,166 +1,178 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" itemscope itemtype="https://schema.org/Organization">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StarLion Academy | IA, Emprendimiento y Futuro</title>
-  <meta name="description" content="Formación poderosa en inteligencia artificial, negocios digitales y conciencia. StarLion Academy impulsa tu propósito con tecnología.">
+  <title>StarLion Academy | Inteligencia Artificial, Emprendimiento y Propósito</title>
+  <meta name="description" content="Academia futurista de formación en inteligencia artificial, negocios digitales y propósito. Cursos, libros y herramientas creadas con IA para transformar tu vida.">
+  <meta name="keywords" content="inteligencia artificial, cursos IA, emprendimiento digital, libros con IA, infoproductos, negocios digitales, StarLion Academy, RugidoIA">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="StarLion Academy">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3178/3178283.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+
+  <!-- Open Graph (Facebook, WhatsApp) -->
+  <meta property="og:title" content="StarLion Academy | Formación con Inteligencia Artificial" />
+  <meta property="og:description" content="Cursos, libros y formación para vivir con conciencia, propósito y tecnología." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1200&q=80" />
+  <meta property="og:url" content="https://starlionacademy.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StarLion Academy">
+  <meta name="twitter:description" content="Formación potente con IA, conciencia y libertad financiera.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1602524206432-31c181d09c3d?auto=format&fit=crop&w=800&q=80">
 
   <style>
     body {
       font-family: 'Orbitron', sans-serif;
       margin: 0;
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #ffffff;
+      color: #fff;
+    }
+    header, main, footer {
+      padding: 40px 20px;
+      text-align: center;
     }
     header {
-      height: 100vh;
       background: url('https://images.unsplash.com/photo-1665686302769-c08db3f23e0c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
+      color: white;
     }
     header h1 {
-      font-size: 3.2rem;
-      background-color: rgba(0, 0, 0, 0.7);
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.7);
       padding: 20px;
-      border-radius: 15px;
+      border-radius: 12px;
     }
     header p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin-top: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
+      max-width: 700px;
+      margin: 20px auto 0;
+      background: rgba(0,0,0,0.5);
       padding: 10px;
       border-radius: 10px;
     }
     .btn {
       margin-top: 20px;
       padding: 12px 24px;
-      background-color: #ffbb00;
+      background: #ffbb00;
       color: #000;
-      font-weight: bold;
-      border: none;
       border-radius: 8px;
+      font-weight: bold;
       text-decoration: none;
-      display: inline-block;
     }
     section {
-      padding: 60px 20px;
-      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    .course {
-      background-color: rgba(255, 255, 255, 0.05);
-      margin: 30px auto;
+    .card {
+      background-color: rgba(255,255,255,0.05);
       padding: 20px;
-      border-radius: 15px;
-      max-width: 850px;
+      border-radius: 12px;
+      margin-bottom: 40px;
     }
-    .course img {
+    .card img {
       width: 100%;
       max-width: 500px;
-      border-radius: 12px;
-    }
-    .course h2 {
-      margin-top: 20px;
-      color: #ffcc00;
-    }
-    .course p {
-      font-size: 1rem;
+      border-radius: 10px;
+      margin-bottom: 15px;
     }
     iframe {
-      margin-top: 15px;
       width: 100%;
       max-width: 560px;
       height: 315px;
       border: none;
       border-radius: 12px;
     }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background-color: #000;
-      color: #aaa;
+    form input, form textarea {
+      width: 90%;
+      max-width: 500px;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+    form button {
+      padding: 12px 24px;
+      background-color: #ffbb00;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
     }
     .social-icons a {
       color: #ffcc00;
       margin: 0 10px;
       text-decoration: none;
-      font-weight: bold;
     }
     .whatsapp {
       position: fixed;
       bottom: 20px;
       right: 20px;
-      z-index: 999;
     }
     .whatsapp img {
       width: 60px;
-      height: 60px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>StarLion Academy</h1>
-  <p>Formación en Inteligencia Artificial, Emprendimiento y Propósito. Una academia para quienes sienten el rugido del futuro en su interior.</p>
-  <a href="#contacto" class="btn">Únete hoy</a>
+  <h1 itemprop="name">StarLion Academy</h1>
+  <p itemprop="description">Academia de formación digital para líderes del futuro: IA, propósito y libertad financiera.</p>
+  <a href="#contacto" class="btn">Transforma tu vida</a>
 </header>
 
-<section>
-  <h2>Cursos y Libros Destacados</h2>
+<main>
+  <section itemscope itemtype="https://schema.org/Course">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1633977852781-dab9cdd7df26?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="Curso IA">
+      <h2 itemprop="name">Curso: Crea Infoproductos con IA</h2>
+      <p itemprop="description">Aprende a generar productos digitales automatizados, sin ser experto en tecnología.</p>
+    </div>
+  </section>
 
-  <div class="course">
-    <img src="https://images.unsplash.com/photo-1633977852781-dab9cdd7df26?auto=format&fit=crop&w=800&q=80" alt="Infoproductos con IA" />
-    <h2>Curso: Crea Infoproductos con IA</h2>
-    <p>Domina el uso de IA para crear cursos, ebooks, talleres y más. Aprende a automatizar la creación y generar ingresos desde casa.</p>
-  </div>
+  <section itemscope itemtype="https://schema.org/Book">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="Libro IA">
+      <h2 itemprop="name">Libro: Reescribe tu vida con IA</h2>
+      <p itemprop="description">Una guía práctica para alinear tu propósito con herramientas de inteligencia artificial y gratitud.</p>
+    </div>
+  </section>
 
-  <div class="course">
-    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="Reescribe tu vida con IA" />
-    <h2>Libro: Reescribe tu vida con IA</h2>
-    <p>Un viaje desde la conciencia hasta la acción, guiado por inteligencia artificial, gratitud y evolución personal. Filosofía práctica para transformar tu camino.</p>
-  </div>
+  <section>
+    <div class="card">
+      <iframe loading="lazy" src="https://player.vimeo.com/video/76979871?h=8272103f6e" allowfullscreen></iframe>
+      <h2>Video: El futuro es ahora</h2>
+      <p>Inspiración para líderes conscientes que usan IA con propósito.</p>
+    </div>
+  </section>
 
-  <div class="course">
-    <img src="https://images.unsplash.com/photo-1602524206432-31c181d09c3d?auto=format&fit=crop&w=800&q=80" alt="Diseño Humano con IA" />
-    <h2>Libro: Tu Diseño Energético</h2>
-    <p>Explora tu carta astral y diseño humano con IA. Una mirada profunda a tu energía esencial para vivir con más autenticidad y poder.</p>
-  </div>
-
-  <div class="course">
-    <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e" allowfullscreen></iframe>
-    <h2>Video: El futuro es ahora</h2>
-    <p>Una experiencia visual sobre cómo la IA, la conciencia y el propósito se entrelazan en una nueva era de emprendimiento.</p>
-  </div>
-</section>
-
-<section id="contacto">
-  <h2>Contáctanos</h2>
-  <p>¿Tienes dudas o quieres acceder a nuestra formación?</p>
-  <form action="https://formsubmit.co/fabiangarmaya@gmail.com" method="POST">
-    <input type="text" name="nombre" placeholder="Tu nombre" required /><br>
-    <input type="email" name="correo" placeholder="Tu correo" required /><br>
-    <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea><br>
-    <button type="submit" class="btn">Enviar</button>
-  </form>
-</section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formsubmit.co/fabiangarmaya@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="correo" placeholder="Tu correo" required />
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+</main>
 
 <footer>
-  <p>Síguenos en redes:</p>
+  <p>Síguenos en:</p>
   <div class="social-icons">
     <a href="https://instagram.com/rugidoia" target="_blank">Instagram</a> |
     <a href="https://tiktok.com/@rugidoia" target="_blank">TikTok</a> |
     <a href="https://facebook.com/rugidoia" target="_blank">Facebook</a> |
     <a href="https://youtube.com/@rugido_ia" target="_blank">YouTube</a>
   </div>
-  <p style="margin-top: 20px;">© 2025 StarLion Academy. Potencia tu esencia. Libera tu rugido.</p>
+  <p style="margin-top:20px;">© 2025 StarLion Academy. Evoluciona con Propósito.</p>
 </footer>
 
 <div class="whatsapp">
