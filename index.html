@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>StarLion Academy | IA, Emprendimiento y Futuro</title>
-  <meta name="description" content="Explora StarLion Academy: formación de élite en Inteligencia Artificial, libertad financiera y conciencia. Aprende con cursos y libros creados para transformar tu vida.">
+  <meta name="description" content="Formación poderosa en inteligencia artificial, negocios digitales y conciencia. StarLion Academy impulsa tu propósito con tecnología.">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3178/3178283.png" type="image/png" />
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
 
@@ -17,27 +17,38 @@
     }
     header {
       height: 100vh;
-      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1665686302769-c08db3f23e0c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      flex-direction: column;
       padding: 0 20px;
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 3.2rem;
       background-color: rgba(0, 0, 0, 0.7);
       padding: 20px;
       border-radius: 15px;
     }
     header p {
-      font-size: 1.2rem;
-      margin-top: 15px;
-      max-width: 700px;
-      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin-top: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 10px;
       border-radius: 10px;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ffbb00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
     }
     section {
       padding: 60px 20px;
@@ -48,7 +59,7 @@
       margin: 30px auto;
       padding: 20px;
       border-radius: 15px;
-      max-width: 800px;
+      max-width: 850px;
     }
     .course img {
       width: 100%;
@@ -72,9 +83,15 @@
     }
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 40px 20px;
       background-color: #000;
       color: #aaa;
+    }
+    .social-icons a {
+      color: #ffcc00;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
     }
     .whatsapp {
       position: fixed;
@@ -92,43 +109,58 @@
 
 <header>
   <h1>StarLion Academy</h1>
-  <p>Academia de Inteligencia Artificial, Emprendimiento y Propósito. Vive, aprende y evoluciona con las herramientas del futuro.</p>
+  <p>Formación en Inteligencia Artificial, Emprendimiento y Propósito. Una academia para quienes sienten el rugido del futuro en su interior.</p>
+  <a href="#contacto" class="btn">Únete hoy</a>
 </header>
 
 <section>
-  <div class="course">
-    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="IA para emprender" />
-    <h2>Curso: Emprende con Inteligencia Artificial</h2>
-    <p>Aprende a lanzar tu propio negocio desde cero utilizando herramientas de IA para automatizar procesos, atraer clientes y escalar rápido.</p>
-  </div>
+  <h2>Cursos y Libros Destacados</h2>
 
   <div class="course">
     <img src="https://images.unsplash.com/photo-1633977852781-dab9cdd7df26?auto=format&fit=crop&w=800&q=80" alt="Infoproductos con IA" />
     <h2>Curso: Crea Infoproductos con IA</h2>
-    <p>Descubre cómo crear libros, cursos y talleres irresistibles usando herramientas de inteligencia artificial como ChatGPT, Canva y ElevenLabs.</p>
+    <p>Domina el uso de IA para crear cursos, ebooks, talleres y más. Aprende a automatizar la creación y generar ingresos desde casa.</p>
   </div>
 
   <div class="course">
-    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" alt="Libro Reescribe tu vida" />
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" alt="Reescribe tu vida con IA" />
     <h2>Libro: Reescribe tu vida con IA</h2>
-    <p>Un libro transformador que combina sabiduría, reflexión y tecnología para ayudarte a reinventar tu camino con gratitud, conciencia y poder.</p>
+    <p>Un viaje desde la conciencia hasta la acción, guiado por inteligencia artificial, gratitud y evolución personal. Filosofía práctica para transformar tu camino.</p>
   </div>
 
   <div class="course">
-    <img src="https://images.unsplash.com/photo-1602524206432-31c181d09c3d?auto=format&fit=crop&w=800&q=80" alt="Diseño humano con IA" />
-    <h2>Libro: Tu Diseño Energético con IA</h2>
-    <p>Una introducción al diseño humano y la carta astral con IA, para que vivas según tu esencia y desbloquees tu potencial.</p>
+    <img src="https://images.unsplash.com/photo-1602524206432-31c181d09c3d?auto=format&fit=crop&w=800&q=80" alt="Diseño Humano con IA" />
+    <h2>Libro: Tu Diseño Energético</h2>
+    <p>Explora tu carta astral y diseño humano con IA. Una mirada profunda a tu energía esencial para vivir con más autenticidad y poder.</p>
   </div>
 
   <div class="course">
-    <iframe src="https://www.youtube.com/embed/2e-f5nVfUFA" allowfullscreen></iframe>
-    <h2>Video: ¿Por qué la IA es tu nuevo superpoder?</h2>
-    <p>Una mirada poderosa a cómo la inteligencia artificial está cambiando el juego para emprendedores de todo el mundo.</p>
+    <iframe src="https://player.vimeo.com/video/76979871?h=8272103f6e" allowfullscreen></iframe>
+    <h2>Video: El futuro es ahora</h2>
+    <p>Una experiencia visual sobre cómo la IA, la conciencia y el propósito se entrelazan en una nueva era de emprendimiento.</p>
   </div>
 </section>
 
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <p>¿Tienes dudas o quieres acceder a nuestra formación?</p>
+  <form action="https://formsubmit.co/fabiangarmaya@gmail.com" method="POST">
+    <input type="text" name="nombre" placeholder="Tu nombre" required /><br>
+    <input type="email" name="correo" placeholder="Tu correo" required /><br>
+    <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea><br>
+    <button type="submit" class="btn">Enviar</button>
+  </form>
+</section>
+
 <footer>
-  <p>© 2025 StarLion Academy | Síguenos en @RugidoIA</p>
+  <p>Síguenos en redes:</p>
+  <div class="social-icons">
+    <a href="https://instagram.com/rugidoia" target="_blank">Instagram</a> |
+    <a href="https://tiktok.com/@rugidoia" target="_blank">TikTok</a> |
+    <a href="https://facebook.com/rugidoia" target="_blank">Facebook</a> |
+    <a href="https://youtube.com/@rugido_ia" target="_blank">YouTube</a>
+  </div>
+  <p style="margin-top: 20px;">© 2025 StarLion Academy. Potencia tu esencia. Libera tu rugido.</p>
 </footer>
 
 <div class="whatsapp">
