@@ -1,183 +1,190 @@
 <!DOCTYPE html>
-<html lang="es" itemscope itemtype="https://schema.org/Organization">
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>StarLion Academy | Inteligencia Artificial, Emprendimiento y Propósito</title>
-  <meta name="description" content="Academia futurista de formación en inteligencia artificial, negocios digitales y propósito. Cursos, libros y herramientas creadas con IA para transformar tu vida.">
-  <meta name="keywords" content="inteligencia artificial, cursos IA, emprendimiento digital, libros con IA, infoproductos, negocios digitales, StarLion Academy, RugidoIA">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="StarLion Academy">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3178/3178283.png" type="image/png" />
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
-
-  <!-- Open Graph (Facebook, WhatsApp) -->
-  <meta property="og:title" content="StarLion Academy | Formación con Inteligencia Artificial" />
-  <meta property="og:description" content="Cursos, libros y formación para vivir con conciencia, propósito y tecnología." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1200&q=80" />
-  <meta property="og:url" content="https://starlionacademy.github.io/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="es_ES" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="StarLion Academy">
-  <meta name="twitter:description" content="Formación potente con IA, conciencia y libertad financiera.">
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1602524206432-31c181d09c3d?auto=format&fit=crop&w=800&q=80">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StarLion Academy: Formación completa en Inteligencia Artificial, Emprendimiento, Automatización, Espiritualidad y Propósito.">
+  <title>StarLion Academy | IA, Emprendimiento y Propósito</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3178/3178283.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Orbitron', sans-serif;
-      margin: 0;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: #fff;
-    }
-    header, main, footer {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header {
-      background: url('https://images.unsplash.com/photo-1665686302769-c08db3f23e0c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      color: white;
-    }
-    header h1 {
-      font-size: 3rem;
-      background-color: rgba(0,0,0,0.7);
-      padding: 20px;
-      border-radius: 12px;
-    }
-    header p {
-      max-width: 700px;
-      margin: 20px auto 0;
-      background: rgba(0,0,0,0.5);
-      padding: 10px;
-      border-radius: 10px;
-    }
-    .btn {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background: #ffbb00;
-      color: #000;
-      border-radius: 8px;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    section {
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .card {
-      background-color: rgba(255,255,255,0.05);
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 40px;
-    }
-    .card img {
-      width: 100%;
-      max-width: 500px;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
-    iframe {
-      width: 100%;
-      max-width: 560px;
-      height: 315px;
-      border: none;
-      border-radius: 12px;
-    }
-    form input, form textarea {
-      width: 90%;
-      max-width: 500px;
-      margin: 10px auto;
-      padding: 10px;
-      border-radius: 6px;
-      border: none;
-    }
-    form button {
-      padding: 12px 24px;
-      background-color: #ffbb00;
-      color: #000;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .social-icons a {
-      color: #ffcc00;
-      margin: 0 10px;
-      text-decoration: none;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-    }
-    .whatsapp img {
-      width: 60px;
-    }
+    body { margin: 0; font-family: 'Orbitron', sans-serif; background: #0f2027; color: #fff; line-height: 1.6; }
+    header, nav, main, section, footer { padding: 20px; text-align: center; }
+    header { background: url('https://images.unsplash.com/photo-1665686302769-c08db3f23e0c?auto=format&fit=crop&w=1600&q=80') no-repeat center/cover; height: 100vh; display: flex; flex-direction: column; justify-content: center; color: white; }
+    nav a { margin: 0 15px; color: #ffcc00; text-decoration: none; font-weight: bold; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px; }
+    .card { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3); }
+    .card img { width: 100%; border-radius: 8px; }
+    h2 { color: #ffcc00; }
+    h3, h4 { color: #fefefe; margin-bottom: 5px; }
+    .hashtags { color: #ccc; font-size: 0.85rem; }
+    footer { background: #000; padding: 30px; font-size: 0.9em; color: #aaa; }
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; z-index: 100; }
+    .whatsapp img { width: 60px; }
+    .subsection { margin-top: 40px; padding: 0 20px; text-align: left; max-width: 1000px; margin-left: auto; margin-right: auto; }
+    .subsection h4 { color: #ffcc00; font-size: 1.3em; margin-bottom: 10px; }
+    .subsection p { font-size: 0.95em; color: #ddd; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1 itemprop="name">StarLion Academy</h1>
-  <p itemprop="description">Academia de formación digital para líderes del futuro: IA, propósito y libertad financiera.</p>
-  <a href="#contacto" class="btn">Transforma tu vida</a>
+  <h1>StarLion Academy</h1>
+  <p>Academia de transformación con IA, propósito, negocios digitales y evolución humana.</p>
 </header>
 
+<nav>
+  <a href="#catalogo">Catálogo</a>
+  <a href="#libros">Libros</a>
+  <a href="#cursos">Cursos</a>
+  <a href="#automatizacion">Automatización</a>
+  <a href="#espiritualidad">Espiritualidad</a>
+  <a href="#testimonios">Testimonios</a>
+  <a href="#faq">FAQ</a>
+  <a href="#glosario">Glosario</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
 <main>
-  <section itemscope itemtype="https://schema.org/Course">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1633977852781-dab9cdd7df26?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="Curso IA">
-      <h2 itemprop="name">Curso: Crea Infoproductos con IA</h2>
-      <p itemprop="description">Aprende a generar productos digitales automatizados, sin ser experto en tecnología.</p>
+  <section id="catalogo">
+    <h2>Catálogo de Infoproductos con IA</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606761568499-a1c0b3d4db1e" alt="Reescribe tu vida con IA">
+        <h3>Reescribe tu Vida con IA</h3>
+        <p>Un libro que fusiona gratitud, evolución humana y espiritualidad, mostrando cómo la IA no reemplaza al ser humano, sino que lo eleva.</p>
+        <p class="hashtags">#IAConPropósito #DesarrolloPersonal #GratitudDigital #EvoluciónHumana</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555529669-e69f9a4f10ef" alt="Emprende con IA">
+        <h3>Emprende con Inteligencia Artificial</h3>
+        <p>Curso completo en 9 módulos + videos + voz AI que te enseña desde cero cómo crear productos digitales con IA, venderlos y escalar online. Sin experiencia técnica, solo con tu celular.</p>
+        <p class="hashtags">#EmprendeConIA #CursoIA #InfoproductosDigitales #NegocioAutomatizado</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312" alt="90 Días IA">
+        <h3>90 Días para Reinventarte con IA</h3>
+        <p>Un programa estructurado día por día que te guía en un proceso práctico y profundo de reinvención personal, apoyado por herramientas de inteligencia artificial y hábitos de alto rendimiento.</p>
+        <p class="hashtags">#90DíasConIA #Reinvéntate #DesarrolloPersonal #IAParaTuVida</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1573164574392-8422d7a7c394" alt="Calendario de Acción">
+        <h3>Calendario de Acción 30 Días</h3>
+        <p>Checklist diario editable que guía a los estudiantes a lanzar su primer producto digital, publicar su contenido, activar embudos y hacer su primera venta usando IA. Ideal para principiantes.</p>
+        <p class="hashtags">#CalendarioIA #EmprendeYA #IAparaPrincipiantes #PasoAPasoDigital</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c" alt="Bonos Visuales">
+        <h3>Pack de Bonos Visuales + Plantillas</h3>
+        <p>Incluye 10 plantillas de Reels, mockups, portadas, CTA animadas, frases virales y voz AI. Material listo para usar, ideal para TikTok, Instagram y Shorts. Diseñado para convertir.</p>
+        <p class="hashtags">#PlantillasReels #IAParaRedes #ContenidoQueVende #MarketingVisual</p>
+      </div>
     </div>
   </section>
 
-  <section itemscope itemtype="https://schema.org/Book">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=800&q=80" loading="lazy" alt="Libro IA">
-      <h2 itemprop="name">Libro: Reescribe tu vida con IA</h2>
-      <p itemprop="description">Una guía práctica para alinear tu propósito con herramientas de inteligencia artificial y gratitud.</p>
+  <section id="libros">
+    <h2>Libros con Inteligencia Artificial</h2>
+    <div class="subsection">
+      <h4>📘 Reescribe tu Vida con IA</h4>
+      <p>Capítulos:</p>
+      <ul>
+        <li>Capítulo 1: Gratitud como Tecnología del Alma</li>
+        <li>Capítulo 2: El Rugido de tu Propósito</li>
+        <li>Capítulo 3: Cómo usar IA para sanar y crear</li>
+        <li>Capítulo 4: Diseña tu Día con IA</li>
+      </ul>
+      <h4>📘 90 Días para Reinventarte</h4>
+      <p>Incluye plan diario, ejercicios, prompts, reflexión y hábitos con IA.</p>
     </div>
   </section>
 
-  <section>
-    <div class="card">
-      <iframe loading="lazy" src="https://player.vimeo.com/video/76979871?h=8272103f6e" allowfullscreen></iframe>
-      <h2>Video: El futuro es ahora</h2>
-      <p>Inspiración para líderes conscientes que usan IA con propósito.</p>
+  <section id="cursos">
+    <h2>Cursos con IA</h2>
+    <div class="subsection">
+      <h4>🎓 Curso: Crea Infoproductos con IA</h4>
+      <ul>
+        <li>Módulo 1: Encuentra tu idea con IA</li>
+        <li>Módulo 2: Estructura tu infoproducto</li>
+        <li>Módulo 3: Crea portada y diseño</li>
+        <li>Módulo 4: Automatiza venta con WhatsApp</li>
+        <li>Módulo 5: Promociona con Reels IA</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="automatizacion">
+    <h2>Automatización y Embudos con IA</h2>
+    <div class="subsection">
+      <h4>Herramientas usadas:</h4>
+      <ul>
+        <li>ChatGPT</li>
+        <li>Zapier</li>
+        <li>WhatsApp Cloud API</li>
+        <li>MailerLite</li>
+        <li>Hotmart</li>
+      </ul>
+      <p>Flujos: Leads → Lead Magnet → WhatsApp → Venta automatizada</p>
+    </div>
+  </section>
+
+  <section id="espiritualidad">
+    <h2>Espiritualidad + IA</h2>
+    <div class="subsection">
+      <p>La tecnología debe estar al servicio de la conciencia. En StarLion, usamos IA como un espejo, un canal y una herramienta para elevar la vida y el alma.</p>
+      <blockquote>“No usar IA con conciencia es como tener alas y no volar.”</blockquote>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="subsection">
+      <p>“Nunca imaginé que con IA y mi celular pudiera tener mi primer curso vendido.” – Ana B.</p>
+      <p>“StarLion me ayudó a conectar mi propósito con la tecnología.” – David R.</p>
+    </div>
+  </section>
+
+  <section id="faq">
+    <h2>Preguntas Frecuentes</h2>
+    <div class="subsection">
+      <p><strong>¿Necesito saber de programación?</strong><br>No, solo necesitas actitud y visión.</p>
+      <p><strong>¿Los productos se pueden vender?</strong><br>Sí, te enseñamos cómo legalmente y estratégicamente.</p>
+    </div>
+  </section>
+
+  <section id="glosario">
+    <h2>Glosario</h2>
+    <div class="subsection">
+      <p><strong>IA:</strong> Inteligencia Artificial.</p>
+      <p><strong>Infoproducto:</strong> Producto digital como libro, curso o taller online.</p>
+      <p><strong>Embudo:</strong> Secuencia automática para vender online.</p>
     </div>
   </section>
 
   <section id="contacto">
-    <h2>Contacto</h2>
+    <h2>Contáctanos</h2>
     <form action="https://formsubmit.co/fabiangarmaya@gmail.com" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required />
-      <input type="email" name="correo" placeholder="Tu correo" required />
-      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <input type="text" name="nombre" placeholder="Tu nombre" required><br>
+      <input type="email" name="correo" placeholder="Tu correo" required><br>
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea><br>
       <button type="submit">Enviar</button>
     </form>
   </section>
 </main>
 
 <footer>
-  <p>Síguenos en:</p>
-  <div class="social-icons">
-    <a href="https://instagram.com/rugidoia" target="_blank">Instagram</a> |
-    <a href="https://tiktok.com/@rugidoia" target="_blank">TikTok</a> |
-    <a href="https://facebook.com/rugidoia" target="_blank">Facebook</a> |
-    <a href="https://youtube.com/@rugido_ia" target="_blank">YouTube</a>
-  </div>
-  <p style="margin-top:20px;">© 2025 StarLion Academy. Evoluciona con Propósito.</p>
+  <p>Síguenos: 
+    <a href="https://instagram.com/rugidoia">Instagram</a> |
+    <a href="https://tiktok.com/@rugidoia">TikTok</a> |
+    <a href="https://facebook.com/rugidoia">Facebook</a> |
+    <a href="https://youtube.com/@rugido_ia">YouTube</a>
+  </p>
+  <p>© 2025 StarLion Academy. Evolución consciente con IA, legado y libertad.</p>
+  <p><a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a> | <a href="#">Mapa del Sitio</a></p>
 </footer>
 
 <div class="whatsapp">
   <a href="https://wa.me/573001464083" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
   </a>
 </div>
 
