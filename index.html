@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StarLion Academy | Inteligencia Artificial & Emprendimiento</title>
+  <meta name="description" content="Academia donde el Emprendimiento, la Inteligencia Artificial y el Propósito se unen para transformar tu vida.">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3178/3178283.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      background-color: #0e0e0e;
+      color: #fff;
+    }
+    header {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      background-color: rgba(0,0,0,0.6);
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+    header p {
+      font-size: 1.2rem;
+      background-color: rgba(0,0,0,0.5);
+      padding: 8px 20px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: 10px auto;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #ffbb00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .benefit {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 12px;
+      width: 280px;
+    }
+    form input, form textarea {
+      width: 90%;
+      max-width: 500px;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    form button {
+      padding: 12px 24px;
+      background-color: #ffbb00;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      background-color: #111;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+    .whatsapp img {
+      width: 60px;
+      height: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <video autoplay muted loop>
+      <source src="https://cdn.coverr.co/videos/coverr-a-girl-working-on-her-laptop-7445/1080p.mp4" type="video/mp4">
+    </video>
+    <div>
+      <h1>StarLion Academy</h1>
+      <p>Academia de Inteligencia Artificial, Emprendimiento y Propósito. Aprende a transformar tu vida con herramientas del futuro.</p>
+      <a href="#contacto" class="btn">Contáctanos</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>¿Por qué elegir StarLion Academy?</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <h3>🔍 Enfoque práctico</h3>
+        <p>Aprende a usar herramientas de IA reales para generar ingresos desde cero.</p>
+      </div>
+      <div class="benefit">
+        <h3>🌍 Mentalidad global</h3>
+        <p>Contenido para hispanohablantes en todo el mundo. Desde Colombia hasta España y EE.UU.</p>
+      </div>
+      <div class="benefit">
+        <h3>🦁 Propósito + Tecnología</h3>
+        <p>Fusionamos avance, conciencia y libertad financiera con una comunidad despierta.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Imágenes generadas con IA</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1612036781895-dce57d6c9859?auto=format&fit=crop&w=600&q=80" alt="IA 1">
+      <img src="https://images.unsplash.com/photo-1612831661740-517e5be29a64?auto=format&fit=crop&w=600&q=80" alt="IA 2">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=600&q=80" alt="IA 3">
+    </div>
+  </section>
+
+  <section>
+    <h2>Formaciones destacadas</h2>
+    <p>Accede a cursos poderosos en IA, negocios digitales y libertad financiera:</p>
+    <a href="https://hotmart.com" target="_blank" class="btn">Ver Cursos</a>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes dudas o quieres unirte a StarLion Academy?</p>
+    <form action="https://formsubmit.co/fabiangarmaya@gmail.com" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required />
+      <input type="email" name="correo" placeholder="Tu correo" required />
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Síguenos en redes:</p>
+    <p>
+      <a href="https://instagram.com/rugidoia" target="_blank">Instagram</a> |
+      <a href="https://tiktok.com/@rugidoia" target="_blank">TikTok</a> |
+      <a href="https://youtube.com/@rugido_ia" target="_blank">YouTube</a>
+    </p>
+    <p>© 2025 StarLion Academy. Todos los derechos reservados.</p>
+  </footer>
+
+  <div class="whatsapp">
+    <a href="https://wa.me/573001234567" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+  </div>
+
+</body>
+</html>
