@@ -1,1 +1,78 @@
-/* Reset básico */...
+/* Estilos base complementarios - StarLion Academy */
+
+/* Tipografía */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Colores auxiliares */
+:root {
+  --gold: #ffd700;
+  --dark: #0e0e0e;
+  --light: #fefefe;
+}
+
+/* Botón destacado */
+.btn-dorado {
+  background-color: var(--gold);
+  color: var(--dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 40px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-dorado:hover {
+  background-color: #e6c200;
+}
+
+/* Secciones visuales */
+section {
+  margin-bottom: 3rem;
+}
+
+/* Links */
+a {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Encabezados secundarios */
+h2 {
+  color: var(--gold);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Imágenes adaptables */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Ajustes específicos del footer */
+footer small {
+  display: block;
+  margin-top: 1rem;
+  color: #999;
+  font-size: 0.8rem;
+}
+
+/* Responsive adicional */
+@media screen and (max-width: 768px) {
+  .btn-dorado {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
